@@ -1,0 +1,278 @@
+/* ---------- GLOBAL RESET ---------- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background-color: #f5f9ff;
+  color: #333;
+  line-height: 1.6;
+}
+
+button {
+  border: none;
+  cursor: pointer;
+  font-size: 15px;
+}
+
+/* ---------- NAVBAR ---------- */
+.hospital-nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: #ffffff;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+  z-index: 1000;
+}
+
+.nav-container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 15px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.hospital-logo {
+  font-size: 26px;
+  font-weight: 700;
+  color: #f35a4d; /* Light Red */
+  cursor: pointer;
+}
+
+.hospital-logo span {
+  color: #4ce754; /* Light Green */
+}
+
+.hospital-menu {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+}
+
+.hospital-menu li {
+  cursor: pointer;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+.hospital-menu li:hover {
+  color: #f05143; /* Light Red hover */
+}
+
+.hospital-actions {
+  display: flex;
+  gap: 10px;
+}
+
+.btn-sign {
+  background: transparent;
+  border: 1px solid #f15445;
+  padding: 8px 16px;
+  border-radius: 4px;
+  color: #f15445;
+}
+
+.btn-login {
+  background: #f28b82;
+  color: white;
+  padding: 8px 16px;
+  border-radius: 4px;
+}
+
+/* ---------- HERO ---------- */
+.hero-section {
+  height: 90vh;
+  display: flex;
+  align-items: center;
+  padding: 0 20px;
+  background-size: cover;
+  background-position: center;
+  margin-top: 70px;
+}
+
+.hero-content {
+  max-width: 600px;
+  color: #fff;
+}
+
+.hero-content h1 {
+  font-size: 48px;
+  margin-bottom: 15px;
+}
+
+.hero-content h1 span {
+  color: #22a329; /* Light Green */
+}
+
+.hero-content p {
+  font-size: 18px;
+  margin-bottom: 25px;
+}
+
+.btn-appointment {
+  background: #f05143; /* Light Green */
+  color: #fff;
+  padding: 12px 22px;
+  border-radius: 30px;
+  font-weight: 600;
+  transition: background 0.3s;
+}
+
+.btn-appointment:hover {
+  background: #66bb6a; /* Darker Green */
+}
+
+/* ---------- SECTION COMMON ---------- */
+.section-title {
+  text-align: center;
+  font-size: 32px;
+  margin-bottom: 40px;
+  color: #f28b82; /* Light Red */
+}
+
+/* ---------- SERVICES ---------- */
+.services-section {
+  padding: 80px 20px;
+  background: #ffffff;
+}
+
+.services-grid {
+  max-width: 1100px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 25px;
+}
+
+.service-card {
+  background: #fef7f7; /* Light red background */
+  padding: 30px 20px;
+  border-radius: 12px;
+  text-align: center;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.service-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+.service-icon {
+  font-size: 40px;
+  margin-bottom: 15px;
+  color: #f28b82; /* Red icon */
+}
+
+/* ---------- ABOUT ---------- */
+.about-section {
+  padding: 80px 20px;
+  background: #eefaf1; /* Light green background */
+}
+
+.about-description {
+  max-width: 700px;
+  margin: 0 auto 40px;
+  text-align: center;
+  color: #555;
+}
+
+.about-grid {
+  max-width: 1000px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 25px;
+}
+
+.about-card {
+  background: white;
+  padding: 30px 20px;
+  border-radius: 12px;
+  text-align: center;
+}
+
+.about-icon {
+  font-size: 40px;
+  margin-bottom: 15px;
+  color: #81c784; /* Green icons */
+}
+
+/* ---------- STATS ---------- */
+.stats-section {
+  background: #f28b82; /* Red background */
+  color: white;
+  padding: 60px 20px;
+}
+
+.stats-grid {
+  max-width: 900px;
+  margin: auto;
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.stat-item h3 {
+  font-size: 36px;
+  margin-bottom: 8px;
+  color: #fff;
+}
+
+/* ---------- FOOTER ---------- */
+.main-footer {
+  background: #0f2f4f;
+  color: #dbe9f6;
+  padding: 60px 20px 20px;
+}
+
+.footer-content {
+  max-width: 1100px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 30px;
+}
+
+.footer-col h3,
+.footer-col h4 {
+  color: #ffffff;
+  margin-bottom: 15px;
+}
+
+.footer-socials span {
+  font-size: 22px;
+  margin-right: 12px;
+  cursor: pointer;
+  transition: transform 0.3s;
+}
+
+.footer-socials span:hover {
+  transform: scale(1.2);
+  color: #81c784; /* Hover green */
+}
+
+.footer-bottom {
+  text-align: center;
+  margin-top: 40px;
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+  padding-top: 15px;
+  font-size: 14px;
+}
+
+/* ---------- RESPONSIVE ---------- */
+@media (max-width: 768px) {
+  .hero-content h1 {
+    font-size: 36px;
+  }
+
+  .hospital-menu {
+    display: none;
+  }
+}

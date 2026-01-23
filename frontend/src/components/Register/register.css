@@ -1,0 +1,161 @@
+/* ===== SignIn Container ===== */
+.signin-container {
+  display: flex;
+  justify-content: center; /* center form horizontally */
+  align-items: center;     /* center form vertically */
+  background-image: url("https://nexgram.co/wp-content/uploads/2020/09/nexgram-medical2.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  padding: 20px;
+  flex-direction: row;
+}
+
+/* ===== SignIn Form ===== */
+.signin-form {
+  display: flex;
+  flex-direction: column;
+  background-color: rgba(255, 255, 255, 0.15);
+backdrop-filter: blur(35px);
+-webkit-backdrop-filter: blur(15px);
+box-shadow: 
+  0 8px 32px rgba(31, 38, 135, 0.37),
+  0 4px 16px rgba(0, 0, 0, 0.1),
+  inset 0 0 0 1px rgba(255, 255, 255, 0.2);
+border: 1px solid rgba(255, 255, 255, 0.18);
+  padding: 25px;
+  border-radius: 8px;
+  width: 400px;
+  max-width: 100%;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+/* ===== Title ===== */
+.signin-title {
+  color: #ffffff;
+  margin-bottom: 20px;
+  font-weight: bold;
+  font-size: 30px;
+}
+
+/* ===== Labels ===== */
+.input-label {
+  color: white;
+  font-size: 16px;
+}
+
+/* ===== Input Groups ===== */
+.input-group {
+  margin: 4px 0;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.67);
+  border-radius: 4px;
+}
+
+.input-icon {
+  margin: 0 8px;
+  color: rgb(247, 85, 85);
+}
+
+.input {
+  flex: 1;
+  padding: 8px;
+  border: none;
+  outline: none;
+  font-size: 16px;
+  width: 100%;
+}
+
+/* ===== Gender ===== */
+.gender-group {
+  display: flex;
+  gap:10px;
+  
+}
+
+.gender-input {
+  color: white;
+  display: flex;
+  gap:6px;
+}
+
+/* ===== Buttons & Links ===== */
+.signin-button {
+  background-color: rgb(247, 85, 85);
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-top: 10px;
+  transition: background 0.3s ease;
+}
+
+.signin-button:hover {
+  background-color: rgb(200, 60, 60);
+}
+
+.line {
+  color: white;
+  text-align: center;
+  margin-top: 10px;
+}
+
+.login-link {
+  color: rgb(247, 85, 85);
+  text-decoration: none;
+  font-weight: 600;
+}
+
+/* ===== Tablet (max-width: 768px) ===== */
+@media screen and (max-width: 768px) {
+  .signin-container {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+  }
+
+  .signin-form {
+    width: 90%;
+    max-width: 380px;
+    margin: 0;
+  }
+
+  .signin-title {
+    font-size: 26px;
+  }
+
+  .input {
+    font-size: 15px;
+  }
+}
+
+/* ===== Mobile (max-width: 480px) ===== */
+@media screen and (max-width: 480px) {
+  .signin-form {
+    width: 100%;
+    padding: 15px;
+  }
+
+  .signin-title {
+    font-size: 22px;
+  }
+
+  .input {
+    font-size: 14px;
+    padding: 6px;
+  }
+
+  .signin-button {
+    font-size: 14px;
+    padding: 8px;
+  }
+
+  .line {
+    font-size: 14px;
+  }
+}
